@@ -1,0 +1,89 @@
+﻿<Window x:Class="Koursach_Tri_v_Ryad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Koursach_Tri_v_Ryad"
+        mc:Ignorable="d"
+        Title="Three in Row" Height="762" Width="1074">
+    <Grid>
+
+        <UniformGrid x:Name="unigrid" Margin="352,80,27,41">
+
+        </UniformGrid>
+
+        <Button x:Name="Start" Content="Начать" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="170" Height="50" Click="Start_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#FF008CFF"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="FontSize" Value="30"/>
+                    <Setter Property="FontFamily" Value="Arial"/>
+                    <Setter Property="BorderThickness" Value="2"/>
+                    <Setter Property="BorderBrush" Value="#FF004080"/>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <ListBox x:Name="Rate" HorizontalAlignment="Left" Height="301" Margin="10,435,0,0" VerticalAlignment="Top" Width="200">
+        </ListBox>
+
+        <Button x:Name="NameChange" Content="Ввести имя" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Width="170" Height="50" Click="NameChange_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="purple"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="FontSize" Value="30"/>
+                    <Setter Property="FontFamily" Value="Arial"/>
+                    <Setter Property="BorderThickness" Value="2"/>
+                    <Setter Property="BorderBrush" Value="DarkViolet"/>
+                </Style>
+            </Button.Style>
+        </Button>
+
+
+        <Label x:Name="PlayerName" Content="Имя:" HorizontalAlignment="Left" Margin="25,240,0,0" VerticalAlignment="Top" RenderTransformOrigin="0,0.5" Width="322" Height="71">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="Green"/>
+                    <Setter Property="FontSize" Value="30"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="FontFamily" Value="Arial"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label x:Name="TimeLabel" Content="Осталось:" HorizontalAlignment="Left" Margin="448,8,0,0" VerticalAlignment="Top" Width="388">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="Orange"/>
+                    <Setter Property="FontSize" Value="30"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label x:Name="Lefthod" Content="" HorizontalAlignment="Left" Margin="395,80,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Таблица лидеров:" HorizontalAlignment="Left" Margin="5,394,0,0" VerticalAlignment="Top" Width="210">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="Pink"/>
+                    <Setter Property="FontSize" Value="23"/>
+                    <Setter Property="FontFamily" Value="Arial"/>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label x:Name="totalscore" Content="Счет:" HorizontalAlignment="Left" Margin="20,164,0,0" VerticalAlignment="Top" Width="170">
+            <Label.Style>
+                <Style TargetType="{x:Type Label}">
+                    <Setter Property="Foreground" Value="Orange"/>
+                    <Setter Property="FontSize" Value="30"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Button x:Name="Save" Content="сохранить" HorizontalAlignment="Left" Margin="20,318,0,0" VerticalAlignment="Top" Width="100" Height="28" Click="Save_Click"/>
+        <Button x:Name="Load" Content="загрузить" HorizontalAlignment="Left" Margin="25,365,0,0" VerticalAlignment="Top" Width="100" Height="28" Click="Load_Click_1"/>
+
+
+    </Grid>
+</Window>
